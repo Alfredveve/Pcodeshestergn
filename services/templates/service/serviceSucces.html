@@ -1,0 +1,126 @@
+{% extends "home/base.html" %}
+
+{% block section %}
+
+<style>
+    /* Reset de base */
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+        
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      
+    }
+
+    /* Animation d'apparition */
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Icône de succès animée */
+    .success-icon {
+        margin-bottom: 20px;
+    }
+
+    .checkmark {
+        width: 80px;
+        height: 80px;
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: drawCheckmark 1.5s ease-in-out 0.5s forwards;
+    }
+
+    @keyframes drawCheckmark {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    /* Titre */
+    .success-content h1 {
+        color: #007bff;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        opacity: 0;
+        animation: fadeIn 0.8s ease-out 1s forwards;
+    }
+
+    /* Prochaines étapes */
+    .next-steps h2 {
+        font-size: 1.5em;
+        color: #007bff;
+        margin-bottom: 10px;
+    }
+
+    .next-steps ul {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+
+    .next-steps li {
+        font-size: 1em;
+        color: #555;
+        margin-bottom: 10px;
+    }
+
+    /* Bouton */
+    .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 24px;
+        background-color: #007bff;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1em;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        opacity: 0;
+        animation: fadeIn 0.8s ease-out 1.6s forwards;
+    }
+
+    .btn:hover {
+        background-color: #0056b3; /* Une teinte plus foncée pour le survol */
+        transform: scale(1.05);
+    }
+
+    /* Animation générale de fondu */
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
+    }
+</style>
+
+<div class="success-container">
+    <div class="success-content">
+        <!-- Icône de succès animée -->
+        <div class="success-icon">
+            <svg viewBox="0 0 100 100" class="checkmark">
+                <circle cx="50" cy="50" r="45" fill="none" stroke="#007bff" stroke-width="10" />
+                <path fill="none" stroke="#007bff" stroke-width="10" d="M20,50 L40,70 L80,30" />
+            </svg>
+        </div>
+        <h1>Félicitations !</h1>
+        <p>Vous êtes officiellement inscrit(e) à la formation <strong>[Nom de la Formation]</strong>.</p>
+        <p>Un email de confirmation vous a été envoyé à l'adresse <strong>[email de l'utilisateur]</strong>.</p>
+        <p>Nous vous contacterons bientôt avec les détails de la formation.</p>
+        <div class="next-steps">
+            <h2>Prochaines étapes :</h2>
+            <ul>
+                <li>Vérifiez votre boîte de réception (et vos spams) pour l'email de confirmation.</li>
+                <li>Préparez-vous pour la formation en consultant les prérequis.</li>
+                <li>Rejoignez notre communauté sur [lien vers le groupe Facebook, Slack, etc.].</li>
+            </ul>
+        </div>
+        <a href="{% url 'pListeService' %}" class="btn">Retour aux services</a>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends "home/base.html" %} 
+
+ {% block section %}
+
+
+ <!-- Header -->
+ <header class="header">
+    <div class="container">
+        <h1><i class="fas fa-laptop-code"></i> Nos Formations</h1>
+        <p class="lead">Découvrez nos programmes pour booster votre carrière</p>
+    </div>
+    </header>
+
+
+
+ <!-- Main Content -->
+ <main class="container my-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Formation 1 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="3.jfif" class="card-img-top" alt="Formation Développement Web">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-code"></i> Formation en Développement Web</h5>
+                    <p class="card-text">Apprenez à créer des sites web modernes avec HTML, CSS, JavaScript et Bootstrap.</p>
+                    <a href="#" class="btn btn-formation">
+                        <i class="fas fa-arrow-right"></i> En savoir plus
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Formation 2 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="1.jpg" class="card-img-top" alt="Formation Data Science">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-chart-line"></i> Formation en Data Science</h5>
+                    <p class="card-text">Maîtrisez les outils et techniques de la data science avec Python et R.</p>
+                    <a href="#" class="btn btn-formation">
+                        <i class="fas fa-arrow-right"></i> En savoir plus
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Formation 3 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="2.jpg" class="card-img-top" alt="Formation Marketing Digital">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-bullhorn"></i> Formation en Marketing Digital</h5>
+                    <p class="card-text">Découvrez les stratégies de marketing digital pour booster votre entreprise.</p>
+                    <a href="#" class="btn btn-formation">
+                        <i class="fas fa-arrow-right"></i> En savoir plus
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+     
+{% endblock %}
