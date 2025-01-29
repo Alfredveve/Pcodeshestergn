@@ -2,99 +2,65 @@
 
 {% block section %}
 <div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <div class="card">
-                <div class="card-header bg-primary text-white">
-                    <h4 class="card-title">{{ message }}</h4>
-                </div>
-                <div class="card-body">
-                    <form action="" method="post" enctype="multipart/form-data">
-                        {% csrf_token %}
-                        
-                        <!-- Champ Service -->
-                        <div class="mb-3">
-                            <label for="{{ form.service.id_for_label }}" class="form-label">Service</label>
-                            {{ form.service }}
-                            {% if form.service.errors %}
-                                <div class="text-danger">
-                                    {{ form.service.errors }}
-                                </div>
-                            {% endif %}
-                        </div>
+    <h1 class="mb-4">Inscription au service {{ service.title }}</h1>
 
-                        <!-- Champ Nom Complet -->
-                        <div class="mb-3">
-                            <label for="{{ form.nomComplet.id_for_label }}" class="form-label">Nom Complet</label>
-                            {{ form.nomComplet }}
-                            {% if form.nomComplet.errors %}
-                                <div class="text-danger">
-                                    {{ form.nomComplet.errors }}
-                                </div>
-                            {% endif %}
-                        </div>
+    <!-- Affichage des messages -->
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
 
-                        <!-- Champ Pays -->
-                        <div class="mb-3">
-                            <label for="{{ form.pays.id_for_label }}" class="form-label">Pays</label>
-                            {{ form.pays }}
-                            {% if form.pays.errors %}
-                                <div class="text-danger">
-                                    {{ form.pays.errors }}
-                                </div>
-                            {% endif %}
-                        </div>
+    <!-- Formulaire -->
+    <form method="post">
+        {% csrf_token %}
 
-                        <!-- Champ Ville -->
-                        <div class="mb-3">
-                            <label for="{{ form.ville.id_for_label }}" class="form-label">Ville</label>
-                            {{ form.ville }}
-                            {% if form.ville.errors %}
-                                <div class="text-danger">
-                                    {{ form.ville.errors }}
-                                </div>
-                            {% endif %}
-                        </div>
+       
 
-                        <!-- Champ Téléphone WhatsApp -->
-                        <div class="mb-3">
-                            <label for="{{ form.tel_whatsapp.id_for_label }}" class="form-label">Téléphone WhatsApp</label>
-                            {{ form.tel_whatsapp }}
-                            {% if form.tel_whatsapp.errors %}
-                                <div class="text-danger">
-                                    {{ form.tel_whatsapp.errors }}
-                                </div>
-                            {% endif %}
-                        </div>
+        <!-- Champ Nom Complet -->
+        <div class="mb-3">
+            <label for="{{ form.nomComplet.id_for_label }}" class="form-label">Nom Complet</label>
+            <input type="text" class="form-control" id="{{ form.nomComplet.id_for_label }}" name="{{ form.nomComplet.name }}" required>
+        </div>
 
-                        <!-- Champ Email -->
-                        <div class="mb-3">
-                            <label for="{{ form.email.id_for_label }}" class="form-label">Email</label>
-                            {{ form.email }}
-                            {% if form.email.errors %}
-                                <div class="text-danger">
-                                    {{ form.email.errors }}
-                                </div>
-                            {% endif %}
-                        </div>
+        <!-- Champ Pays -->
+        <div class="mb-3">
+            <label for="{{ form.pays.id_for_label }}" class="form-label">Pays</label>
+            <input type="text" class="form-control" id="{{ form.pays.id_for_label }}" name="{{ form.pays.name }}" required>
+        </div>
 
-                        <!-- Champ Message -->
-                        <div class="mb-3">
-                            <label for="{{ form.message.id_for_label }}" class="form-label">Message</label>
-                            {{ form.message }}
-                            {% if form.message.errors %}
-                                <div class="text-danger">
-                                    {{ form.message.errors }}
-                                </div>
-                            {% endif %}
-                        </div>
+        <!-- Champ Ville -->
+        <div class="mb-3">
+            <label for="{{ form.ville.id_for_label }}" class="form-label">Ville</label>
+            <input type="text" class="form-control" id="{{ form.ville.id_for_label }}" name="{{ form.ville.name }}" required>
+        </div>
 
-                        <!-- Bouton de soumission -->
-                        <button type="submit" class="btn btn-primary">Inscription</button>
-                    </form>
-                </div>
+        <!-- Champ Téléphone WhatsApp -->
+        <div class="mb-3">
+            <label for="{{ form.tel_whatsapp.id_for_label }}" class="form-label">Téléphone WhatsApp</label>
+            <input type="tel" class="form-control" id="{{ form.tel_whatsapp.id_for_label }}" name="{{ form.tel_whatsapp.name }}" required>
+        </div>
+
+        <!-- Champ Email -->
+        <div class="mb-3">
+            <label for="{{ form.email.id_for_label }}" class="form-label">Email</label>
+            <input type="email" class="form-control" id="{{ form.email.id_for_label }}" name="{{ form.email.name }}" required>
+        </div>
+
+        <!-- Champ Message -->
+        <div class="mb-3">
+            <label for="{{ form.message.id_for_label }}" class="form-label">Message</label>
+            <textarea class="form-control" id="{{ form.message.id_for_label }}" name="{{ form.message.name }}" rows="4" required></textarea>
+        </div>
+
+        <!-- Bouton de soumission -->
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <button type="submit" class="btn btn-primary w-100">S'inscrire</button>
             </div>
         </div>
-    </div>
+    </form>
 </div>
 {% endblock %}
