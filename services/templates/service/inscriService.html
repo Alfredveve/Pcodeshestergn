@@ -32,6 +32,7 @@
                             {% endif %}
                         </div>
 
+
 <!-- Champ Pays -->
 <div class="mb-4">
     <label for="{{ form.pays.id_for_label }}" class="form-label fw-bold">
@@ -41,13 +42,15 @@
         <select class="form-select form-select-lg" id="{{ form.pays.id_for_label }}" name="{{ form.pays.name }}">
             <option value="" selected disabled>Sélectionnez votre pays</option>
             {% for code, nom in form.pays.field.choices %}
-                <option value="{{ code }}" {% if form.pays.value == code %}selected{% endif %}>
-                    {{ nom }}
-                </option>
+                {% if code %}  <!-- Ajoutez cette condition pour éviter les options vides -->
+                    <option value="{{ code }}" {% if form.pays.value == code %}selected{% endif %}>
+                        {{ nom }}
+                    </option>
+                {% endif %}
             {% endfor %}
         </select>
         <span class="input-group-text">
-            <i class="fas fa-chevron-down"></i>
+           
         </span>
     </div>
     {% if form.pays.errors %}
