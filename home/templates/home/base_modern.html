@@ -65,6 +65,37 @@
     <!-- Footer -->
     {% include "home/components/footer_modern.html" %}
 
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-8 right-8 z-50 group">
+        <!-- Tooltip -->
+        <div class="absolute right-full mr-4 top-1/2 -translate-y-1/2 px-4 py-2 bg-secondary text-white text-sm font-medium rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none whitespace-nowrap shadow-xl border border-gray-700">
+            Discutez avec nous sur WhatsApp
+            <div class="absolute top-1/2 -translate-y-1/2 left-full w-2 h-2 bg-secondary rotate-45 -ml-1"></div>
+        </div>
+        
+        <!-- Button -->
+        <a href="https://wa.me/224620833502" target="_blank" class="flex items-center justify-center w-16 h-16 bg-[#25D366] text-white rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 relative overflow-hidden group">
+            <!-- Ripple effect -->
+            <div class="absolute inset-0 bg-white/20 scale-0 group-hover:scale-150 transition-transform duration-700 rounded-full"></div>
+            
+            <!-- Icon -->
+            <i class="fab fa-whatsapp text-3xl relative z-10 animate-pulse-slow"></i>
+            
+            <!-- Notification Dot -->
+            <div class="absolute top-0 right-0 w-4 h-4 bg-red-500 border-2 border-white rounded-full animate-bounce"></div>
+        </a>
+    </div>
+
+    <style>
+        @keyframes pulse-slow {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        .animate-pulse-slow {
+            animation: pulse-slow 3s infinite ease-in-out;
+        }
+    </style>
+
     <!-- Custom Scripts -->
     {% block scripts %}{% endblock %}
     

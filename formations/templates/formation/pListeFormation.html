@@ -58,9 +58,9 @@
                         <a href="{% url 'pDetailsFormation' formation.pk %}" class="flex-1 text-center bg-gray-50 text-secondary px-6 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all border border-gray-100">
                             En savoir plus
                         </a>
-                        <button class="bg-primary text-white p-4 rounded-2xl hover:bg-indigo-700 transition-all shadow-lg active:scale-95">
+                        <a href="https://wa.me/224620833502?text=Bonjour, je souhaite m'inscrire à la formation : {{ formation.title }}" target="_blank" class="bg-primary text-white p-4 rounded-2xl hover:bg-indigo-700 transition-all shadow-lg active:scale-95">
                             <i class="fas fa-user-plus"></i>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

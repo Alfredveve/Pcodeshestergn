@@ -14,6 +14,7 @@
             <div class="hidden md:flex items-center space-x-8">
                 <a href="{% url 'phome' %}" class="text-gray-700 hover:text-primary font-medium transition-colors">Accueil</a>
                 <a href="{% url 'pListeService' %}" class="text-gray-700 hover:text-primary font-medium transition-colors">Services</a>
+                <a href="{% url 'maintenance:list' %}" class="text-gray-700 hover:text-primary font-medium transition-colors">Maintenance</a>
                 <a href="{% url 'pListeFormation' %}" class="text-gray-700 hover:text-primary font-medium transition-colors">Formations</a>
                 <a href="{% url 'about' %}" class="text-gray-700 hover:text-primary font-medium transition-colors">À Propos</a>
                 <a href="{% url 'contact' %}" class="bg-primary text-white px-6 py-2.5 rounded-full font-semibold hover:bg-indigo-700 transition-all shadow-lg hover:shadow-indigo-200 active:scale-95">Contactez-nous</a>
@@ -38,6 +39,7 @@
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a href="{% url 'phome' %}" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Accueil</a>
             <a href="{% url 'pListeService' %}" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Services</a>
+            <a href="{% url 'maintenance:list' %}" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Maintenance</a>
             <a href="{% url 'pListeFormation' %}" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Formations</a>
             <a href="{% url 'about' %}" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">À Propos</a>
             <div class="pt-4 pb-2 border-t border-gray-200">

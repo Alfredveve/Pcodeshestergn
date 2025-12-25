@@ -1,6 +1,7 @@
 from django.views.generic import TemplateView
 from services.models import Service
 from formations.models import Formation
+from maintenance.models import MaintenanceCategory, MaintenanceService
 from .models import HomeSettings, Partner
 
 class HomeView(TemplateView):
@@ -10,6 +11,7 @@ class HomeView(TemplateView):
         context = super().get_context_data(**kwargs)
         context['services'] = Service.objects.all()[:4]
         context['formations'] = Formation.objects.all()[:4]
+        context['maintenance_categories'] = MaintenanceCategory.objects.all()
         context['settings'] = HomeSettings.objects.first()
         context['partners'] = Partner.objects.all()
         return context
