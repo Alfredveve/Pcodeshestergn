@@ -25,9 +25,9 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = 'django-insecure-a8_ocx&t@@e66464dr!faj%(rv(%ia7vir_vi*fgpz(z@&b901'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['codeshester.pythonanywhere.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
