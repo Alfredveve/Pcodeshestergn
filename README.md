@@ -1,6 +1,6 @@
 # Pcodeshestergn
 
-Une plateforme moderne de gestion de services et de formations, développée avec Django.
+Une plateforme moderne de **maintenances et de prestation de services informatiques**, offrant également des formations spécialisées, développée avec Django.
 
 ## 🚀 Fonctionnalités
 
