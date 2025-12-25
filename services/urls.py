@@ -1,9 +1,8 @@
 from django.urls import path
-from services.views import fListeService, fInscriService, fsuccesService
-
+from .views import ServiceListView, ServiceInscriptionView, ServiceSuccessView
 
 urlpatterns = [
-    path('inscriService/<int:service_id>', fInscriService, name='inscriService'),
-    path('pListeService/', fListeService, name='pListeService'),
-    path('serviceSucces/', fsuccesService, name='serviceSucces'),
+    path('pListeService/', ServiceListView.as_view(), name='pListeService'),
+    path('inscriService/<int:service_id>/', ServiceInscriptionView.as_view(), name='inscriService'),
+    path('serviceSucces/', ServiceSuccessView.as_view(), name='serviceSucces'),
 ]

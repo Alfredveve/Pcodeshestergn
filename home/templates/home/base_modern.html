@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Codeshestergn | Solutions Digitales{% endblock %}</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4f46e5', // Indigo 600
+                        secondary: '#1e293b', // Slate 800
+                        accent: '#3b82f6', // Blue 500
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Roboto', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- HTMX -->
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    
+    <!-- Alpine.js (for minor interactions like mobile menu) -->
+    <script defer src="https://unpkg.com/alpinejs@3.13.3/dist/cdn.min.js"></script>
+
+    <style>
+        [x-cloak] { display: none !important; }
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+    
+    {% block extra_head %}{% endblock %}
+</head>
+<body class="bg-gray-50 text-secondary font-sans antialiased">
+
+    <!-- Navbar -->
+    {% include "home/components/navbar_modern.html" %}
+
+    <!-- Main Content -->
+    <main class="min-h-screen">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    {% include "home/components/footer_modern.html" %}
+
+    <!-- Custom Scripts -->
+    {% block scripts %}{% endblock %}
+    
+    <script>
+        // CSRF Token for HTMX
+        document.body.addEventListener('htmx:configRequest', (event) => {
+            event.detail.headers['X-CSRFToken'] = '{{ csrf_token }}';
+        });
+    </script>
+</body>
+</html>

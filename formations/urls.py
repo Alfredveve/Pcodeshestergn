@@ -1,6 +1,7 @@
 from django.urls import path
-from formations.views import fListeFormation
+from .views import FormationListView, FormationDetailView
 
 urlpatterns = [
-    path('pListeFormation/', fListeFormation, name='pListeFormation')
+    path('pListeFormation/', FormationListView.as_view(), name='pListeFormation'),
+    path('pDetailsFormation/<int:pk>/', FormationDetailView.as_view(), name='pDetailsFormation'),
 ]

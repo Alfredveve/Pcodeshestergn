@@ -1,126 +1,58 @@
-{% extends "home/base.html" %}
+{% extends "home/base_modern.html" %}
 
-{% block section %}
+{% block title %}Demande Envoyée | Codeshestergn{% endblock %}
 
-<style>
-    /* Reset de base */
-    body {
-        font-family: 'Arial', sans-serif;
-        background-color: #f4f4f9;
-        margin: 0;
-        padding: 0;
+{% block content %}
+<section class="py-24 bg-gray-50 flex items-center justify-center min-h-[80vh]">
+    <div class="max-w-2xl w-full mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="bg-white rounded-[3rem] shadow-2xl p-12 lg:p-16 border border-gray-100 relative overflow-hidden">
+            <!-- Background Decorative element -->
+            <div class="absolute -top-24 -right-24 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+            
+            <div class="relative z-10">
+                <div class="inline-flex items-center justify-center w-24 h-24 rounded-full bg-green-50 text-green-500 mb-10 shadow-inner">
+                    <i class="fas fa-check-circle text-5xl animate-bounce"></i>
+                </div>
+
+                <h1 class="text-4xl font-extrabold text-secondary mb-6 italic">Félicitations !</h1>
+                
+                <div class="space-y-4 text-lg text-gray-500 mb-12">
+                    <p>Votre demande pour le service <span class="text-primary font-bold">{% if service_title %}{{ service_title }}{% else %}sélectionné{% endif %}</span> a été enregistrée avec succès.</p>
+                    <p>Un conseiller technique vous contactera sur <span class="font-bold text-secondary">WhatsApp</span> dans les prochaines heures pour finaliser les détails.</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-8 mb-12 text-left border border-gray-100">
+                    <h2 class="text-sm font-bold text-secondary uppercase tracking-widest mb-6 border-b border-gray-200 pb-2">Prochaines Étapes</h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1 w-5 h-5 rounded-full bg-primary/10 text-primary flex items-center justify-center text-[10px]"><i class="fas fa-1"></i></span>
+                            <span class="text-gray-600 text-sm">Vérifiez vos notifications WhatsApp et vos emails.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1 w-5 h-5 rounded-full bg-primary/10 text-primary flex items-center justify-center text-[10px]"><i class="fas fa-2"></i></span>
+                            <span class="text-gray-600 text-sm">Préparez les informations complémentaires si nécessaire.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1 w-5 h-5 rounded-full bg-primary/10 text-primary flex items-center justify-center text-[10px]"><i class="fas fa-3"></i></span>
+                            <span class="text-gray-600 text-sm">Rejoignez notre communauté pour suivre nos actualités.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="{% url 'phome' %}" class="px-10 py-4 bg-secondary text-white rounded-2xl font-bold hover:bg-gray-800 transition-all shadow-lg active:scale-95">
+                        Retour à l'accueil
+                    </a>
+                    <a href="{% url 'pListeService' %}" class="px-10 py-4 bg-white text-secondary border border-gray-200 rounded-2xl font-bold hover:bg-gray-50 transition-all shadow-sm active:scale-95">
+                        Voir d'autres services
+                    </a>
+                </div>
+            </div>
+        </div>
         
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      
-    }
-
-    /* Animation d'apparition */
-    @keyframes fadeInUp {
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    /* Icône de succès animée */
-    .success-icon {
-        margin-bottom: 20px;
-    }
-
-    .checkmark {
-        width: 80px;
-        height: 80px;
-        stroke-dasharray: 1000;
-        stroke-dashoffset: 1000;
-        animation: drawCheckmark 1.5s ease-in-out 0.5s forwards;
-    }
-
-    @keyframes drawCheckmark {
-        to {
-            stroke-dashoffset: 0;
-        }
-    }
-
-    /* Titre */
-    .success-content h1 {
-        color: #007bff;
-        font-size: 2.5em;
-        margin-bottom: 20px;
-        opacity: 0;
-        animation: fadeIn 0.8s ease-out 1s forwards;
-    }
-
-    /* Prochaines étapes */
-    .next-steps h2 {
-        font-size: 1.5em;
-        color: #007bff;
-        margin-bottom: 10px;
-    }
-
-    .next-steps ul {
-        list-style-type: disc;
-        padding-left: 20px;
-    }
-
-    .next-steps li {
-        font-size: 1em;
-        color: #555;
-        margin-bottom: 10px;
-    }
-
-    /* Bouton */
-    .btn {
-        display: inline-block;
-        margin-top: 20px;
-        padding: 12px 24px;
-        background-color: #007bff;
-        color: #ffffff;
-        text-decoration: none;
-        border-radius: 5px;
-        font-size: 1em;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-        opacity: 0;
-        animation: fadeIn 0.8s ease-out 1.6s forwards;
-    }
-
-    .btn:hover {
-        background-color: #0056b3; /* Une teinte plus foncée pour le survol */
-        transform: scale(1.05);
-    }
-
-    /* Animation générale de fondu */
-    @keyframes fadeIn {
-        to {
-            opacity: 1;
-        }
-    }
-</style>
-
-<div class="success-container">
-    <div class="success-content">
-        <!-- Icône de succès animée -->
-        <div class="success-icon">
-            <svg viewBox="0 0 100 100" class="checkmark">
-                <circle cx="50" cy="50" r="45" fill="none" stroke="#007bff" stroke-width="10" />
-                <path fill="none" stroke="#007bff" stroke-width="10" d="M20,50 L40,70 L80,30" />
-            </svg>
-        </div>
-        <h1>Félicitations !</h1>
-        <p>Vous êtes officiellement inscrit(e) à la formation <strong>[Nom de la Formation]</strong>.</p>
-        <p>Un email de confirmation vous a été envoyé à l'adresse <strong>[email de l'utilisateur]</strong>.</p>
-        <p>Nous vous contacterons bientôt avec les détails de la formation.</p>
-        <div class="next-steps">
-            <h2>Prochaines étapes :</h2>
-            <ul>
-                <li>Vérifiez votre boîte de réception (et vos spams) pour l'email de confirmation.</li>
-                <li>Préparez-vous pour la formation en consultant les prérequis.</li>
-                <li>Rejoignez notre communauté sur [lien vers le groupe Facebook, Slack, etc.].</li>
-            </ul>
-        </div>
-        <a href="{% url 'pListeService' %}" class="btn">Retour aux services</a>
+        <p class="mt-12 text-gray-400 text-sm">
+            Une question urgente ? <a href="#" class="text-primary font-bold hover:underline">Contactez le support</a>
+        </p>
     </div>
-</div>
-
+</section>
 {% endblock %}
