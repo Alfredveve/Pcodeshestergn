@@ -27,7 +27,7 @@
                 <div class="bg-white rounded-[2rem] shadow-xl shadow-gray-200/50 border border-gray-100 hover:border-primary/30 transition-all group overflow-hidden">
                     <div class="h-56 overflow-hidden relative">
                         {% if service.image %}
-                        <img src="{{ service.image.url }}" alt="{{ service.title }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <img src="{{ service.image.url }}" alt="{{ service.title }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy">
                         {% else %}
                         <div class="w-full h-full bg-indigo-50 flex items-center justify-center text-primary">
                             <i class="{{ category.icon }} text-5xl"></i>
