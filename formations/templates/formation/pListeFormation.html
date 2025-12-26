@@ -17,7 +17,7 @@
             <div class="flex flex-col rounded-[2.5rem] bg-white border border-gray-100 shadow-2xl shadow-gray-200/50 overflow-hidden group hover:-translate-y-3 transition-all duration-500">
                 <div class="relative h-64 overflow-hidden">
                     {% if formation.image %}
-                    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="{{ formation.image.url }}" alt="{{ formation.title }}">
+                    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="{{ formation.image.url }}" alt="{{ formation.title }}" loading="lazy">
                     {% else %}
                     <div class="w-full h-full bg-gradient-to-br from-primary to-indigo-800 flex items-center justify-center">
                         <i class="fas fa-laptop-code text-white/50 text-7xl"></i>

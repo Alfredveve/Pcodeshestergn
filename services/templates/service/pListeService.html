@@ -17,7 +17,7 @@
             <div class="bg-white rounded-[2.5rem] shadow-2xl shadow-gray-200/40 p-10 border border-gray-100 hover:border-primary/30 transition-all group overflow-hidden relative">
                 <div class="h-64 -mx-10 -mt-10 mb-10 overflow-hidden relative group-hover:scale-105 transition-transform duration-700">
                     {% if service.image %}
-                    <img src="{{ service.image.url }}" alt="{{ service.title }}" class="w-full h-full object-cover">
+                    <img src="{{ service.image.url }}" alt="{{ service.title }}" class="w-full h-full object-cover" loading="lazy">
                     {% else %}
                     <div class="w-full h-full bg-indigo-50 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
                          {% if service.title == "Maintenance d'imprimantes" %}<i class="fas fa-print text-5xl"></i>

@@ -33,7 +33,8 @@
                 <div class="relative mx-auto w-full rounded-3xl shadow-2xl overflow-hidden group">
                     <img class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105" 
                          src="{% if settings.hero_image %}{{ settings.hero_image.url }}{% else %}https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&q=80&w=1000{% endif %}" 
-                         alt="Bureau moderne">
+                         alt="Bureau moderne"
+                         loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent flex items-center justify-center">
                         <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-2xl animate-pulse">
                             <i class="fas fa-play text-primary ml-1"></i>
@@ -102,7 +103,7 @@
             <div class="flex flex-col rounded-3xl shadow-xl overflow-hidden bg-white border border-gray-100 group">
                 <div class="flex-shrink-0 relative overflow-hidden h-56">
                     {% if formation.image %}
-                    <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" src="{{ formation.image.url }}" alt="{{ formation.title }}">
+                    <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" src="{{ formation.image.url }}" alt="{{ formation.title }}" loading="lazy">
                     {% else %}
                     <div class="h-full w-full bg-gradient-to-br from-indigo-500 to-primary flex items-center justify-center text-white">
                         {% if "web" in formation.title|lower %}<i class="fas fa-code text-5xl"></i>
@@ -182,7 +183,7 @@
         <div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60">
             {% for partner in partners %}
             <a href="{{ partner.website|default:'#' }}" class="transition-all hover:opacity-100">
-                <img src="{{ partner.logo.url }}" alt="{{ partner.name }}" class="h-12 md:h-16 w-auto grayscale hover:grayscale-0 transition-all">
+                <img src="{{ partner.logo.url }}" alt="{{ partner.name }}" class="h-12 md:h-16 w-auto grayscale hover:grayscale-0 transition-all" loading="lazy">
             </a>
             {% endfor %}
         </div>
