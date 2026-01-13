@@ -2,6 +2,7 @@ from django.urls import path
 from . import api_views
 
 urlpatterns = [
+    path('', api_views.api_root, name='api-home-root'),
     path('home-settings/', api_views.HomeSettingsView.as_view(), name='api-home-settings'),
     path('partners/', api_views.PartnerListView.as_view(), name='api-partners'),
     path('contact/', api_views.ContactMessageCreateView.as_view(), name='api-contact'),
@@ -15,3 +16,4 @@ urlpatterns = [
     path('maintenance-request/', api_views.MaintenanceRequestCreateView.as_view(), name='api-maintenance-request'),
     path('global-data/', api_views.global_data, name='api-global-data'),
 ]
+

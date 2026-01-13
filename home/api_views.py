@@ -77,3 +77,21 @@ def global_data(request):
         'formations': FormationSerializer(formations, many=True, context={'request': request}).data,
         'maintenance_categories': MaintenanceCategorySerializer(maintenance_categories, many=True, context={'request': request}).data,
     })
+
+@api_view(['GET'])
+def api_root(request):
+    """
+    Provides a list of all available sub-endpoints for the /api/ path.
+    """
+    return Response({
+        'home-settings': '/api/home-settings/',
+        'partners': '/api/partners/',
+        'contact': '/api/contact/',
+        'services': '/api/services/',
+        'formations': '/api/formations/',
+        'inscriptions': '/api/inscriptions/',
+        'maintenance-categories': '/api/maintenance-categories/',
+        'maintenance-request': '/api/maintenance-request/',
+        'global-data': '/api/global-data/',
+    })
+
