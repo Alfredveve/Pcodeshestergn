@@ -16,18 +16,25 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-
-# Importation pour les fichier static et les images
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
 from django.conf import settings
 from django.conf.urls.static import static
 
+@api_view(['GET'])
+def api_root(request):
+    return Response({
+        'message': 'Bienvenue sur l\'API Pcodeshestergn',
+        'endpoints': {
+            'admin': '/admin/',
+            'api': '/api/',
+        }
+    })
+
 urlpatterns = [
-    path('api/', include('home.api_urls')),
-    path('', include('home.urls')),
-    path('services/', include('services.urls')),
-    path('formations/', include('formations.urls')),
-    path('maintenance/', include('maintenance.urls')),
+    path('', api_root, name='api-root'),
     path('admin/', admin.site.urls),
+    path('api/', include('home.api_urls')),
 ]
 
 if settings.DEBUG:

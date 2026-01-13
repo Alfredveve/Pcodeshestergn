@@ -46,3 +46,14 @@ Thumbs.db
 script_output.txt
 temp_image_audit.txt
 *.log
+
+# Templates et static de l'ancienne version
+/templates/
+/static/bootstrap/
+/staticfiles/
+
+# Frontend React
+/frontend/node_modules/
+/frontend/build/
+/frontend/dist/
+
