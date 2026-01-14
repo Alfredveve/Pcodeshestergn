@@ -73,7 +73,7 @@ const FormationDetailPage = () => {
                     <div className="lg:col-span-5 space-y-8">
                         <div className="rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-700 bg-slate-800/50">
                             {formation.image ? (
-                                <img className="w-full h-auto object-cover" src={formation.image} alt={formation.title} />
+                                <img className="w-full h-auto object-cover" src={formation.image} alt={formation.title} loading="lazy" />
                             ) : (
                                 <div className="w-full h-80 bg-slate-700 flex items-center justify-center text-gray-500">
                                     <i className="fas fa-laptop-code text-6xl"></i>

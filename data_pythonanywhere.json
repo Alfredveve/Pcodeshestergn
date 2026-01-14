@@ -1,0 +1,610 @@
+[
+    {
+        "model": "home.homesettings",
+        "pk": 1,
+        "fields": {
+            "hero_title": "L'Excellence Technologique à votre Portée",
+            "hero_subtitle": "Codeshestergn vous accompagne dans votre transformation digitale avec des services de maintenance, bureautique et formation de premier ordre.",
+            "hero_image": "home/hero/hero.png",
+            "students_count": "1200+",
+            "satisfaction_rate": "99%",
+            "years_expertise": "15+",
+            "support_hours": "24/7"
+        }
+    },
+    {
+        "model": "formations.formation",
+        "pk": 1,
+        "fields": {
+            "title": "Developpement web sur django",
+            "image": "formations/image/django_dev_modern.png",
+            "description": "la description",
+            "certifier": true,
+            "price": "2 500 000",
+            "created_at": "2025-01-28T15:48:36.042847+00:00",
+            "updated_at": "2025-12-25T05:11:50.663796+00:00",
+            "publish_name": "Alfred BESHEED"
+        }
+    },
+    {
+        "model": "formations.formation",
+        "pk": 2,
+        "fields": {
+            "title": "CEH v13",
+            "image": "formations/image/cyber_ceh.png",
+            "description": "la description",
+            "certifier": true,
+            "price": "1 000 000",
+            "created_at": "2025-01-28T15:49:43.439189+00:00",
+            "updated_at": "2025-12-25T05:11:50.672417+00:00",
+            "publish_name": "Jérémy Lamah"
+        }
+    },
+    {
+        "model": "formations.formation",
+        "pk": 3,
+        "fields": {
+            "title": "Sécurité Information",
+            "image": "formations/image/coding.png",
+            "description": "la description de la sécurité",
+            "certifier": true,
+            "price": "1 650 000",
+            "created_at": "2025-01-28T15:50:38.045347+00:00",
+            "updated_at": "2025-12-25T05:11:50.680023+00:00",
+            "publish_name": "Saliou Bah"
+        }
+    },
+    {
+        "model": "formations.formation",
+        "pk": 4,
+        "fields": {
+            "title": "Développement Web Complet",
+            "image": "formations/image/coding.png",
+            "description": "Apprenez les bases du HTML, CSS, JavaScript et Django pour devenir un développeur full-stack opérationnel.",
+            "certifier": true,
+            "price": "1500000",
+            "created_at": "2025-12-25T04:25:47.417641+00:00",
+            "updated_at": "2025-12-25T04:25:47.426644+00:00",
+            "publish_name": ""
+        }
+    },
+    {
+        "model": "formations.formation",
+        "pk": 5,
+        "fields": {
+            "title": "Développement Web avec Django",
+            "image": "formations/image/django_dev_modern.png",
+            "description": "Maîtrisez le framework web pour perfectionnistes. Apprenez à créer des applications web robustes, sécurisées et scalables avec Python.",
+            "certifier": true,
+            "price": "2500000",
+            "created_at": "2025-12-25T04:31:56.097922+00:00",
+            "updated_at": "2025-12-25T04:31:56.106508+00:00",
+            "publish_name": ""
+        }
+    },
+    {
+        "model": "formations.formation",
+        "pk": 6,
+        "fields": {
+            "title": "CEH v13 (Certified Ethical Hacker)",
+            "image": "formations/image/cyber_ceh.png",
+            "description": "Devenez un expert en sécurité offensive. Apprenez les dernières techniques de hack éthique pour protéger les infrastructures modernes.",
+            "certifier": true,
+            "price": "5500000",
+            "created_at": "2025-12-25T04:31:56.113896+00:00",
+            "updated_at": "2025-12-25T04:31:56.120110+00:00",
+            "publish_name": ""
+        }
+    },
+    {
+        "model": "formations.formation",
+        "pk": 7,
+        "fields": {
+            "title": "Sécurité de l'Information",
+            "image": "formations/image/coding.png",
+            "description": "Gouvernance, gestion des risques et conformité. Apprenez à protéger le capital informationnel de votre entreprise.",
+            "certifier": true,
+            "price": "3500000",
+            "created_at": "2025-12-25T04:31:56.128744+00:00",
+            "updated_at": "2025-12-25T04:31:56.134618+00:00",
+            "publish_name": ""
+        }
+    },
+    {
+        "model": "formations.formation",
+        "pk": 8,
+        "fields": {
+            "title": "Informatique de Base : Windows & Internet",
+            "image": "",
+            "description": "Apprendre à utiliser un ordinateur, manipuler des fichiers et naviguer sur le web en sécurité.",
+            "certifier": true,
+            "price": "500,000",
+            "created_at": "2025-12-25T16:19:36.693936+00:00",
+            "updated_at": "2025-12-25T16:19:36.693936+00:00",
+            "publish_name": "Administrateur"
+        }
+    },
+    {
+        "model": "formations.formation",
+        "pk": 9,
+        "fields": {
+            "title": "Bureautique : Microsoft Office (Word, Excel)",
+            "image": "",
+            "description": "Maîtriser la création de documents et le traitement de données sous Excel.",
+            "certifier": true,
+            "price": "750,000",
+            "created_at": "2025-12-25T16:19:36.700397+00:00",
+            "updated_at": "2025-12-25T16:19:36.700397+00:00",
+            "publish_name": "Administrateur"
+        }
+    },
+    {
+        "model": "formations.formation",
+        "pk": 10,
+        "fields": {
+            "title": "Maintenance 1er niveau",
+            "image": "",
+            "description": "Savoir diagnostiquer les pannes simples et entretenir son propre matériel.",
+            "certifier": true,
+            "price": "600,000",
+            "created_at": "2025-12-25T16:19:36.706999+00:00",
+            "updated_at": "2025-12-25T16:19:36.706999+00:00",
+            "publish_name": "Administrateur"
+        }
+    },
+    {
+        "model": "maintenance.maintenancecategory",
+        "pk": 1,
+        "fields": {
+            "name": "Maintenance d'Imprimantes",
+            "icon": "fas fa-print",
+            "description": "Services professionnels de maintenance, réparation et entretien pour tous types d'imprimantes (jet d'encre, laser, multifonctions).",
+            "image": ""
+        }
+    },
+    {
+        "model": "maintenance.maintenancecategory",
+        "pk": 2,
+        "fields": {
+            "name": "Maintenance d'Ordinateurs",
+            "icon": "fas fa-laptop",
+            "description": "Maintenance complète de PC de bureau et portables : diagnostic, réparation matérielle, optimisation et nettoyage.",
+            "image": ""
+        }
+    },
+    {
+        "model": "maintenance.maintenancecategory",
+        "pk": 3,
+        "fields": {
+            "name": "Maintenance Réseau & Serveurs",
+            "icon": "fas fa-network-wired",
+            "description": "Installation, configuration et maintenance de réseaux informatiques et serveurs d'entreprise.",
+            "image": ""
+        }
+    },
+    {
+        "model": "maintenance.maintenancecategory",
+        "pk": 4,
+        "fields": {
+            "name": "Maintenance Imprimantes",
+            "icon": "fas fa-print",
+            "description": "Réparation et entretien spécialisé pour imprimantes Epson et HP.",
+            "image": ""
+        }
+    },
+    {
+        "model": "maintenance.maintenancecategory",
+        "pk": 5,
+        "fields": {
+            "name": "Maintenance PC & Laptops",
+            "icon": "fas fa-laptop",
+            "description": "Réparation matérielle et logicielle de vos ordinateurs.",
+            "image": ""
+        }
+    },
+    {
+        "model": "maintenance.maintenancecategory",
+        "pk": 6,
+        "fields": {
+            "name": "Photographie & Identité",
+            "icon": "fas fa-camera",
+            "description": "Services de photographie professionnelle et tirage minute.",
+            "image": ""
+        }
+    },
+    {
+        "model": "maintenance.maintenancecategory",
+        "pk": 7,
+        "fields": {
+            "name": "Conseils & Technologie",
+            "icon": "fas fa-lightbulb",
+            "description": "Accompagnement dans vos choix technologiques.",
+            "image": ""
+        }
+    },
+    {
+        "model": "maintenance.maintenanceservice",
+        "pk": 1,
+        "fields": {
+            "category": 1,
+            "title": "Réparation d'Imprimantes",
+            "description": "Diagnostic et réparation de tous types de pannes : bourrage papier, problèmes d'impression, erreurs système. Intervention rapide sur site ou en atelier.",
+            "price_start": "50,000",
+            "image": "",
+            "is_active": true,
+            "created_at": "2025-12-25T05:58:20.322835+00:00",
+            "updated_at": "2025-12-25T05:58:20.322835+00:00"
+        }
+    },
+    {
+        "model": "maintenance.maintenanceservice",
+        "pk": 2,
+        "fields": {
+            "category": 1,
+            "title": "Nettoyage et Entretien",
+            "description": "Nettoyage complet des têtes d'impression, rouleaux et mécanismes internes. Prolonge la durée de vie de votre imprimante.",
+            "price_start": "30,000",
+            "image": "",
+            "is_active": true,
+            "created_at": "2025-12-25T05:58:20.329704+00:00",
+            "updated_at": "2025-12-25T05:58:20.329704+00:00"
+        }
+    },
+    {
+        "model": "maintenance.maintenanceservice",
+        "pk": 3,
+        "fields": {
+            "category": 1,
+            "title": "Installation et Configuration",
+            "description": "Installation professionnelle de nouvelles imprimantes, configuration réseau, paramétrage des pilotes et formation utilisateur.",
+            "price_start": "25,000",
+            "image": "",
+            "is_active": true,
+            "created_at": "2025-12-25T05:58:20.339740+00:00",
+            "updated_at": "2025-12-25T05:58:20.339740+00:00"
+        }
+    },
+    {
+        "model": "maintenance.maintenanceservice",
+        "pk": 4,
+        "fields": {
+            "category": 2,
+            "title": "Diagnostic Complet",
+            "description": "Analyse approfondie de votre PC : performance, virus, erreurs système, état du matériel. Rapport détaillé fourni.",
+            "price_start": "40,000",
+            "image": "",
+            "is_active": true,
+            "created_at": "2025-12-25T05:58:20.346614+00:00",
+            "updated_at": "2025-12-25T05:58:20.346614+00:00"
+        }
+    },
+    {
+        "model": "maintenance.maintenanceservice",
+        "pk": 5,
+        "fields": {
+            "category": 2,
+            "title": "Réparation Matérielle",
+            "description": "Remplacement de composants défectueux : disque dur, RAM, carte mère, écran. Pièces de qualité garanties.",
+            "price_start": "80,000",
+            "image": "",
+            "is_active": true,
+            "created_at": "2025-12-25T05:58:20.355755+00:00",
+            "updated_at": "2025-12-25T05:58:20.355755+00:00"
+        }
+    },
+    {
+        "model": "maintenance.maintenanceservice",
+        "pk": 6,
+        "fields": {
+            "category": 2,
+            "title": "Nettoyage et Optimisation",
+            "description": "Nettoyage physique complet, suppression des virus, optimisation du système, mise à jour des pilotes.",
+            "price_start": "35,000",
+            "image": "",
+            "is_active": true,
+            "created_at": "2025-12-25T05:58:20.365554+00:00",
+            "updated_at": "2025-12-25T05:58:20.365554+00:00"
+        }
+    },
+    {
+        "model": "maintenance.maintenanceservice",
+        "pk": 7,
+        "fields": {
+            "category": 2,
+            "title": "Upgrade et Amélioration",
+            "description": "Mise à niveau de votre PC : ajout de RAM, installation SSD, amélioration des performances.",
+            "price_start": "60,000",
+            "image": "",
+            "is_active": true,
+            "created_at": "2025-12-25T05:58:20.372686+00:00",
+            "updated_at": "2025-12-25T05:58:20.372686+00:00"
+        }
+    },
+    {
+        "model": "maintenance.maintenanceservice",
+        "pk": 8,
+        "fields": {
+            "category": 3,
+            "title": "Installation Réseau",
+            "description": "Mise en place de réseaux câblés et Wi-Fi pour entreprises. Configuration routeurs, switches et points d'accès.",
+            "price_start": "150,000",
+            "image": "maintenance/services/server_maintenance.png",
+            "is_active": true,
+            "created_at": "2025-12-25T05:58:20.380706+00:00",
+            "updated_at": "2025-12-25T05:58:20.380706+00:00"
+        }
+    },
+    {
+        "model": "maintenance.maintenanceservice",
+        "pk": 9,
+        "fields": {
+            "category": 3,
+            "title": "Maintenance Serveurs",
+            "description": "Entretien préventif et correctif de serveurs : mise à jour, sauvegarde, surveillance, sécurité.",
+            "price_start": "200,000",
+            "image": "maintenance/services/server_maintenance.png",
+            "is_active": true,
+            "created_at": "2025-12-25T05:58:20.388030+00:00",
+            "updated_at": "2025-12-25T05:58:20.388030+00:00"
+        }
+    },
+    {
+        "model": "maintenance.maintenanceservice",
+        "pk": 10,
+        "fields": {
+            "category": 4,
+            "title": "Entretien Epson EcoTank",
+            "description": "Nettoyage têtes, remise à zéro tampon, optimisation.",
+            "price_start": "150,000",
+            "image": "maintenance/services/epson_l3250_maintenance.png",
+            "is_active": true,
+            "created_at": "2025-12-25T16:19:36.556729+00:00",
+            "updated_at": "2025-12-25T16:19:36.556729+00:00"
+        }
+    },
+    {
+        "model": "maintenance.maintenanceservice",
+        "pk": 11,
+        "fields": {
+            "category": 4,
+            "title": "Réparation Laser HP",
+            "description": "Remplacement de four, nettoyage laser, résolution bourrages.",
+            "price_start": "250,000",
+            "image": "",
+            "is_active": true,
+            "created_at": "2025-12-25T16:19:36.564150+00:00",
+            "updated_at": "2025-12-25T16:19:36.564150+00:00"
+        }
+    },
+    {
+        "model": "maintenance.maintenanceservice",
+        "pk": 12,
+        "fields": {
+            "category": 4,
+            "title": "Déblocage têtes de lecture",
+            "description": "Débouchage profond pour encres séchées.",
+            "price_start": "100,000",
+            "image": "",
+            "is_active": true,
+            "created_at": "2025-12-25T16:19:36.572071+00:00",
+            "updated_at": "2025-12-25T16:19:36.572071+00:00"
+        }
+    },
+    {
+        "model": "maintenance.maintenanceservice",
+        "pk": 13,
+        "fields": {
+            "category": 5,
+            "title": "Nettoyage physique & Pâte thermique",
+            "description": "Évite la surchauffe et prolonge la durée de vie.",
+            "price_start": "150,000",
+            "image": "",
+            "is_active": true,
+            "created_at": "2025-12-25T16:19:36.586745+00:00",
+            "updated_at": "2025-12-25T16:19:36.586745+00:00"
+        }
+    },
+    {
+        "model": "maintenance.maintenanceservice",
+        "pk": 14,
+        "fields": {
+            "category": 5,
+            "title": "Optimisation Système (Windows)",
+            "description": "Suppression virus, accélération du démarrage.",
+            "price_start": "100,000",
+            "image": "",
+            "is_active": true,
+            "created_at": "2025-12-25T16:19:36.592157+00:00",
+            "updated_at": "2025-12-25T16:19:36.592157+00:00"
+        }
+    },
+    {
+        "model": "maintenance.maintenanceservice",
+        "pk": 15,
+        "fields": {
+            "category": 5,
+            "title": "Récupération de données",
+            "description": "Récupération suite à panne disque dur ou suppression.",
+            "price_start": "300,000",
+            "image": "",
+            "is_active": true,
+            "created_at": "2025-12-25T16:19:36.600365+00:00",
+            "updated_at": "2025-12-25T16:19:36.600365+00:00"
+        }
+    },
+    {
+        "model": "maintenance.maintenanceservice",
+        "pk": 16,
+        "fields": {
+            "category": 6,
+            "title": "Photos d'identité (x8)",
+            "description": "Format passeport, permis ou carte d'identité.",
+            "price_start": "30,000",
+            "image": "",
+            "is_active": true,
+            "created_at": "2025-12-25T16:19:36.636381+00:00",
+            "updated_at": "2025-12-25T16:19:36.636381+00:00"
+        }
+    },
+    {
+        "model": "maintenance.maintenanceservice",
+        "pk": 17,
+        "fields": {
+            "category": 6,
+            "title": "Portrait Professionnel",
+            "description": "Séance photo pour CV ou profils sociaux.",
+            "price_start": "150,000",
+            "image": "",
+            "is_active": true,
+            "created_at": "2025-12-25T16:19:36.645026+00:00",
+            "updated_at": "2025-12-25T16:19:36.645026+00:00"
+        }
+    },
+    {
+        "model": "maintenance.maintenanceservice",
+        "pk": 18,
+        "fields": {
+            "category": 6,
+            "title": "Tirage Photo numérique",
+            "description": "Impression haute qualité tous formats.",
+            "price_start": "5,000",
+            "image": "",
+            "is_active": true,
+            "created_at": "2025-12-25T16:19:36.655141+00:00",
+            "updated_at": "2025-12-25T16:19:36.655141+00:00"
+        }
+    },
+    {
+        "model": "maintenance.maintenanceservice",
+        "pk": 19,
+        "fields": {
+            "category": 7,
+            "title": "Audit de parc informatique",
+            "description": "Analyse de vos équipements et recommandations.",
+            "price_start": "500,000",
+            "image": "",
+            "is_active": true,
+            "created_at": "2025-12-25T16:19:36.672523+00:00",
+            "updated_at": "2025-12-25T16:19:36.672523+00:00"
+        }
+    },
+    {
+        "model": "maintenance.maintenanceservice",
+        "pk": 20,
+        "fields": {
+            "category": 7,
+            "title": "Conseil en achat matériel",
+            "description": "Aide au choix du meilleur équipement selon budget.",
+            "price_start": "100,000",
+            "image": "",
+            "is_active": true,
+            "created_at": "2025-12-25T16:19:36.680215+00:00",
+            "updated_at": "2025-12-25T16:19:36.680215+00:00"
+        }
+    },
+    {
+        "model": "maintenance.maintenanceservice",
+        "pk": 21,
+        "fields": {
+            "category": 7,
+            "title": "Sécurisation réseau WiFi",
+            "description": "Configuration sécurisée pour PME et domiciles.",
+            "price_start": "200,000",
+            "image": "maintenance/services/server_maintenance.png",
+            "is_active": true,
+            "created_at": "2025-12-25T16:19:36.687042+00:00",
+            "updated_at": "2025-12-25T16:19:36.687042+00:00"
+        }
+    },
+    {
+        "model": "services.service",
+        "pk": 1,
+        "fields": {
+            "title": "Maintenance Epson L3250",
+            "description": "La description",
+            "price": "250 000",
+            "image": "services/images/printer_repair_pro.png",
+            "created_at": "2025-01-28T15:29:08.385689+00:00",
+            "updated_at": "2025-12-25T05:11:50.697577+00:00",
+            "publish_name": "Alfred BESHEED"
+        }
+    },
+    {
+        "model": "services.service",
+        "pk": 3,
+        "fields": {
+            "title": "Repartion Epson",
+            "description": "Description",
+            "price": "3 000 000",
+            "image": "services/images/printer_repair_pro.png",
+            "created_at": "2025-01-28T15:46:34.020247+00:00",
+            "updated_at": "2025-01-28T16:07:46.997216+00:00",
+            "publish_name": "Alfred BESHEED"
+        }
+    },
+    {
+        "model": "services.service",
+        "pk": 4,
+        "fields": {
+            "title": "Pintestin Web",
+            "description": "la description de pintest",
+            "price": "1 500 000",
+            "image": "formations/image/coding.png",
+            "created_at": "2025-01-28T15:47:18.828967+00:00",
+            "updated_at": "2025-12-25T05:17:03.376328+00:00",
+            "publish_name": "Abass Sylla"
+        }
+    },
+    {
+        "model": "services.service",
+        "pk": 5,
+        "fields": {
+            "title": "Developpement WEB",
+            "description": "la description",
+            "price": "5000",
+            "image": "formations/image/django_dev.png",
+            "created_at": "2025-01-30T13:27:34.426239+00:00",
+            "updated_at": "2025-12-25T05:17:03.383908+00:00",
+            "publish_name": "Alfred"
+        }
+    },
+    {
+        "model": "services.service",
+        "pk": 6,
+        "fields": {
+            "title": "Maintenance d'imprimantes",
+            "description": "Service professionnel de réparation et entretien pour tous types d'imprimantes (Laser, Jet d'encre, 3D).",
+            "price": "50000",
+            "image": "services/images/printer_repair_pro.png",
+            "created_at": "2025-12-25T04:25:47.369322+00:00",
+            "updated_at": "2025-12-25T05:11:50.689280+00:00",
+            "publish_name": ""
+        }
+    },
+    {
+        "model": "services.service",
+        "pk": 7,
+        "fields": {
+            "title": "Photos d'identité",
+            "description": "Prise de vue professionnelle pour vos documents officiels, passeports et visas.",
+            "price": "25000",
+            "image": "services/images/identity_photo_studio.png",
+            "created_at": "2025-12-25T04:25:47.388264+00:00",
+            "updated_at": "2025-12-25T05:11:50.706649+00:00",
+            "publish_name": ""
+        }
+    },
+    {
+        "model": "services.service",
+        "pk": 8,
+        "fields": {
+            "title": "Réparation Spécialisée Epson",
+            "description": "Expertise certifiée pour la remise en état de vos imprimantes Epson (L-series, Workforce, EcoTank). Pièces d'origine garanties.",
+            "price": "75000",
+            "image": "services/images/printer_repair_pro.png",
+            "created_at": "2025-12-25T04:31:56.074464+00:00",
+            "updated_at": "2025-12-25T04:31:56.081059+00:00",
+            "publish_name": ""
+        }
+    }
+]

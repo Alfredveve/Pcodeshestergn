@@ -15,7 +15,7 @@ const AboutPage = () => {
             description: 'Nous repoussons sans cesse les limites technologiques pour offrir des solutions d\'avant-garde.'
         },
         {
-            icon: 'fa-shield-check',
+            icon: 'fa-shield-alt',
             title: 'Fiabilité',
             description: 'La sécurité et la stabilité de vos systèmes sont notre priorité absolue.'
         },
@@ -86,9 +86,10 @@ const AboutPage = () => {
                         <div className="relative">
                             <div className="absolute inset-0 bg-gradient-to-tr from-secondary to-primary opacity-20 transform rotate-3 rounded-[2rem]"></div>
                             <img 
-                                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" 
                                 alt="Équipe travaillant ensemble" 
                                 className="relative rounded-[2rem] shadow-2xl w-full h-auto object-cover transform -rotate-3 hover:rotate-0 transition-all duration-500"
+                                loading="lazy"
                             />
                         </div>
                     </div>
@@ -105,16 +106,56 @@ const AboutPage = () => {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {values.map((val, index) => (
-                            <div key={index} className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
-                                <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary text-2xl mb-6">
+                            <div key={index} className="group bg-white p-8 rounded-[2rem] shadow-lg border border-gray-100 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2 transition-all duration-300 relative overflow-hidden">
+                                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/5 to-transparent rounded-bl-[100px] -mr-8 -mt-8 transition-transform group-hover:scale-150 duration-500"></div>
+                                
+                                <div className="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center text-primary text-2xl mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300 shadow-sm relative z-10">
                                     <i className={`fas ${val.icon}`}></i>
                                 </div>
-                                <h3 className="text-xl font-bold text-secondary mb-3">{val.title}</h3>
-                                <p className="text-gray-500 leading-relaxed text-sm">
+                                <h3 className="text-xl font-bold text-secondary mb-3 relative z-10">{val.title}</h3>
+                                <p className="text-gray-500 leading-relaxed text-sm relative z-10">
                                     {val.description}
                                 </p>
                             </div>
                         ))}
+                    </div>
+                </div>
+            </div>
+
+            {/* Location Section */}
+            <div className="py-24">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">Notre Emplacement</h2>
+                        <p className="text-lg text-gray-500 max-w-2xl mx-auto">
+                            Visitez-nous à Conakry, Guinée. Nous sommes facilement accessibles et prêts à vous accueillir.
+                        </p>
+                    </div>
+                    
+                    <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4567890123456!2d-13.5030281!3d9.7142085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf02d55fa937cc5b%3A0x45573439385861ab!2sPcodeshestergn!5e0!3m2!1sfr!2sgn!4v1234567890123!5m2!1sfr!2sgn"
+                            width="100%" 
+                            height="450" 
+                            style={{ border: 0 }}
+                            allowFullScreen="" 
+                            loading="lazy" 
+                            referrerPolicy="no-referrer-when-downgrade"
+                            title="Emplacement de Pcodeshestergn"
+                            className="w-full"
+                        ></iframe>
+                    </div>
+
+                    <div className="mt-8 text-center">
+                        <a 
+                            href="https://www.google.com/maps/place/Pcodeshestergn/@9.7142085,-13.5030281,17z/data=!3m1!4b1!4m6!3m5!1s0xf02d55fa937cc5b:0x45573439385861ab!8m2!3d9.7142085!4d-13.5030281!16s%2Fg%2F11vzrn0c4g?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center px-6 py-3 bg-primary text-white font-bold rounded-xl shadow-lg hover:bg-secondary transition-all"
+                        >
+                            <i className="fas fa-map-marker-alt mr-2"></i>
+                            Ouvrir dans Google Maps
+                        </a>
                     </div>
                 </div>
             </div>

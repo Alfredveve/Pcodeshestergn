@@ -46,7 +46,7 @@ const FormationsPage = () => {
                         <div key={formation.id} className="group flex flex-col bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-3xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20">
                             <div className="relative h-64 overflow-hidden">
                                 {formation.image ? (
-                                    <img className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" src={formation.image} alt={formation.title} />
+                                    <img className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" src={formation.image} alt={formation.title} loading="lazy" />
                                 ) : (
                                     <div className="h-full w-full bg-gradient-to-br from-slate-700 to-slate-800 flex items-center justify-center text-white text-5xl opacity-50">
                                         <i className="fas fa-laptop-code"></i>

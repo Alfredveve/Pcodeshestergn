@@ -85,7 +85,7 @@ const ServiceDetailPage = () => {
                         <div className="sticky top-32">
                             <div className="rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white">
                                 {service.image ? (
-                                    <img className="w-full h-auto object-cover" src={service.image} alt={service.title} />
+                                    <img className="w-full h-auto object-cover" src={service.image} alt={service.title} loading="lazy" />
                                 ) : (
                                     <div className="w-full h-96 bg-gray-100 flex items-center justify-center text-gray-400">
                                         <i className="fas fa-image text-6xl"></i>

@@ -1,0 +1,51 @@
+MEDIA_ROOT: C:\Users\codeshester0011\Desktop\Pcodeshestergn\media
+Formation: Developpement web sur django
+  Image Field: formations/image/django_dev_modern.png
+  Image Path: C:\Users\codeshester0011\Desktop\Pcodeshestergn\media\formations\image\django_dev_modern.png
+  [OK] File exists
+--------------------
+Formation: CEH v13
+  Image Field: formations/image/cyber_ceh.png
+  Image Path: C:\Users\codeshester0011\Desktop\Pcodeshestergn\media\formations\image\cyber_ceh.png
+  [OK] File exists
+--------------------
+Formation: Sécurité Information
+  Image Field: formations/image/coding.png
+  Image Path: C:\Users\codeshester0011\Desktop\Pcodeshestergn\media\formations\image\coding.png
+  [OK] File exists
+--------------------
+Formation: Développement Web Complet
+  Image Field: formations/image/coding.png
+  Image Path: C:\Users\codeshester0011\Desktop\Pcodeshestergn\media\formations\image\coding.png
+  [OK] File exists
+--------------------
+Formation: Développement Web avec Django
+  Image Field: formations/image/django_dev_modern.png
+  Image Path: C:\Users\codeshester0011\Desktop\Pcodeshestergn\media\formations\image\django_dev_modern.png
+  [OK] File exists
+--------------------
+Formation: CEH v13 (Certified Ethical Hacker)
+  Image Field: formations/image/cyber_ceh.png
+  Image Path: C:\Users\codeshester0011\Desktop\Pcodeshestergn\media\formations\image\cyber_ceh.png
+  [OK] File exists
+--------------------
+Formation: Sécurité de l'Information
+  Image Field: formations/image/coding.png
+  Image Path: C:\Users\codeshester0011\Desktop\Pcodeshestergn\media\formations\image\coding.png
+  [OK] File exists
+--------------------
+Formation: Informatique de Base : Windows & Internet
+  Image Field: formations\image\informatique_base.png
+  Image Path: C:\Users\codeshester0011\Desktop\Pcodeshestergn\media\formations\image\informatique_base.png
+  [OK] File exists
+--------------------
+Formation: Bureautique : Microsoft Office (Word, Excel)
+  Image Field: formations\image\bureautique.png
+  Image Path: C:\Users\codeshester0011\Desktop\Pcodeshestergn\media\formations\image\bureautique.png
+  [OK] File exists
+--------------------
+Formation: Maintenance 1er niveau
+  Image Field: formations\image\maintenance_1.png
+  Image Path: C:\Users\codeshester0011\Desktop\Pcodeshestergn\media\formations\image\maintenance_1.png
+  [OK] File exists
+--------------------

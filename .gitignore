@@ -55,5 +55,4 @@ temp_image_audit.txt
 # Frontend React
 /frontend/node_modules/
 /frontend/build/
-/frontend/dist/
 

@@ -1,0 +1,219 @@
+{
+    "services": [
+        {
+            "id": 1,
+            "title": "Maintenance Epson L3250",
+            "description": "Service complet de maintenance pour imprimantes Epson L3250. Inclut le nettoyage des têtes, l'alignement, la vérification des niveaux d'encre et la résolution des bourrages papier pour assurer une qualité d'impression optimale."
+        },
+        {
+            "id": 3,
+            "title": "Repartion Epson",
+            "description": "Réparation experte de votre matériel Epson. Diagnostic précis, remplacement de pièces défectueuses par des composants d'origine et tests rigoureux pour garantir la longévité de votre équipement."
+        },
+        {
+            "id": 4,
+            "title": "Pintestin Web",
+            "description": "Stratégie et design web optimisés. Nous vous accompagnons dans la création de visuels percutants et l'intégration de solutions web pour améliorer votre visibilité et votre image de marque en ligne."
+        },
+        {
+            "id": 5,
+            "title": "Developpement WEB",
+            "description": "Développement web sur mesure pour concrétiser vos projets. Création de sites vitrines, e-commerce et applications web performantes, sécurisées et adaptées à tous les écrans (responsive design)."
+        },
+        {
+            "id": 6,
+            "title": "Maintenance d'imprimantes",
+            "description": "Service professionnel de réparation et entretien pour tous types d'imprimantes (Laser, Jet d'encre, 3D). Nous intervenons sur les pannes mécaniques et électroniques pour rétablir vos flux d'impression."
+        },
+        {
+            "id": 7,
+            "title": "Photos d'identité",
+            "description": "Prise de vue professionnelle pour vos documents officiels. Photos d'identité conformes aux normes pour passeports, visas, permis de conduire et cartes d'identité, réalisées en quelques minutes."
+        },
+        {
+            "id": 8,
+            "title": "Réparation Spécialisée Epson",
+            "description": "Expertise certifiée pour la remise en état de vos imprimantes Epson (L-series, Workforce, EcoTank). Utilisation exclusive de pièces d'origine garanties pour une fiabilité retrouvée."
+        }
+    ],
+    "formations": [
+        {
+            "id": 1,
+            "title": "Developpement web sur django",
+            "description": "Maîtrisez le développement web avec Django, le framework Python de référence. Apprenez à concevoir des applications robustes, de la gestion de base de données à l'interface utilisateur, en passant par la sécurité."
+        },
+        {
+            "id": 2,
+            "title": "CEH v13",
+            "description": "Formation certifiante CEH v13 (Certified Ethical Hacker). Acquérez les compétences offensives pour tester et sécuriser les systèmes informatiques contre les cybermenaces modernes. Préparation intensive à l'examen."
+        },
+        {
+            "id": 3,
+            "title": "Sécurité Information",
+            "description": "Comprendre les fondamentaux de la Sécurité de l'Information. Protégez les données sensibles de votre entreprise grâce aux meilleures pratiques en matière de confidentialité, d'intégrité et de disponibilité."
+        },
+        {
+            "id": 4,
+            "title": "Développement Web Complet",
+            "description": "Parcours complet de Développement Web Full-Stack. Du HTML/CSS/JS au backend avancé, devenez un développeur polyvalent capable de construire et déployer des sites web modernes de A à Z."
+        },
+        {
+            "id": 5,
+            "title": "Développement Web avec Django",
+            "description": "Spécialisation Développement Web avec Django. Plongez au cœur du framework pour perfectionnistes : architecture MVT, ORM, authentification et déploiement d'applications Python scalables."
+        },
+        {
+            "id": 6,
+            "title": "CEH v13 (Certified Ethical Hacker)",
+            "description": "CEH v13 (Certified Ethical Hacker) - Niveau Expert. Devenez un expert en sécurité offensive. Apprenez les dernières techniques de hack éthique, pentesting et analyse de vulnérabilités pour protéger les infrastructures."
+        },
+        {
+            "id": 7,
+            "title": "Sécurité de l'Information",
+            "description": "Gouvernance et Sécurité de l'Information. Apprenez à gérer les risques, établir des politiques de sécurité efficaces et assurer la conformité pour protéger le capital informationnel de votre organisation."
+        },
+        {
+            "id": 8,
+            "title": "Informatique de Base : Windows & Internet",
+            "description": "Initiation à l'Informatique : Windows & Internet. Maîtrisez les bases de l'ordinateur, la gestion des fichiers, et naviguez sur le web en toute sécurité et efficacité. Idéal pour les débutants."
+        },
+        {
+            "id": 9,
+            "title": "Bureautique : Microsoft Office (Word, Excel)",
+            "description": "Bureautique Avancée : Microsoft Office (Word, Excel). Devenez productif avec la suite Office. Création de documents professionnels sous Word et traitement de données, tableaux et formules sous Excel."
+        },
+        {
+            "id": 10,
+            "title": "Maintenance 1er niveau",
+            "description": "Maintenance Informatique 1er niveau. Apprenez à diagnostiquer les pannes courantes, effectuer des nettoyages systèmes et gérer l'entretien préventif de votre matériel informatique."
+        }
+    ],
+    "maintenance_services": [
+        {
+            "id": 1,
+            "title": "Réparation d'Imprimantes",
+            "category": "Maintenance d'Imprimantes",
+            "description": "Diagnostic et réparation de tous types de pannes d'imprimantes : bourrage papier, défauts d'impression, codes erreurs. Intervention rapide et efficace pour minimiser vos temps d'arrêt."
+        },
+        {
+            "id": 2,
+            "title": "Nettoyage et Entretien",
+            "category": "Maintenance d'Imprimantes",
+            "description": "Nettoyage approfondi et entretien préventif. Nettoyage des têtes d'impression, des rouleaux d'entraînement et des mécanismes internes pour prolonger significativement la durée de vie de votre imprimante."
+        },
+        {
+            "id": 3,
+            "title": "Installation et Configuration",
+            "category": "Maintenance d'Imprimantes",
+            "description": "Installation et configuration clé en main. Installation de nouvelles imprimantes, configuration réseau (Wi-Fi/Ethernet), installation des pilotes et formation rapide des utilisateurs."
+        },
+        {
+            "id": 4,
+            "title": "Diagnostic Complet",
+            "category": "Maintenance d'Ordinateurs",
+            "description": "Diagnostic complet de votre ordinateur. Analyse détaillée des performances, détection de virus/malwares, vérification de l'état du disque dur et de la mémoire. Rapport de santé complet fourni."
+        },
+        {
+            "id": 5,
+            "title": "Réparation Matérielle",
+            "category": "Maintenance d'Ordinateurs",
+            "description": "Réparation matérielle d'ordinateurs (PC/Laptop). Remplacement d'écrans cassés, claviers, disques durs, batteries et autres composants défectueux avec des pièces de haute qualité."
+        },
+        {
+            "id": 6,
+            "title": "Nettoyage et Optimisation",
+            "category": "Maintenance d'Ordinateurs",
+            "description": "Nettoyage et optimisation système. Suppression des fichiers temporaires, éradication de virus, mise à jour des pilotes et optimisation du démarrage pour retrouver un PC rapide et fluide."
+        },
+        {
+            "id": 7,
+            "title": "Upgrade et Amélioration",
+            "category": "Maintenance d'Ordinateurs",
+            "description": "Upgrade et amélioration de performances. Boostez votre PC avec l'ajout de mémoire RAM ou le passage à un disque SSD ultra-rapide pour une seconde jeunesse de votre matériel."
+        },
+        {
+            "id": 8,
+            "title": "Installation Réseau",
+            "category": "Maintenance Réseau & Serveurs",
+            "description": "Installation et structuration de réseaux locaux. Mise en place de câblage, configuration de routeurs, switchs et répéteurs Wi-Fi pour une connectivité stable et performante en entreprise ou à domicile."
+        },
+        {
+            "id": 9,
+            "title": "Maintenance Serveurs",
+            "category": "Maintenance Réseau & Serveurs",
+            "description": "Maintenance proactive de serveurs. Surveillance de l'état de santé, gestion des sauvegardes, mises à jour de sécurité et intervention rapide en cas d'incident pour assurer la continuité de service."
+        },
+        {
+            "id": 10,
+            "title": "Entretien Epson EcoTank",
+            "category": "Maintenance Imprimantes",
+            "description": "Entretien spécifique Epson EcoTank. Procédure complète incluant le nettoyage des têtes, la remise à zéro des compteurs de tampons d'encre et la purge du système."
+        },
+        {
+            "id": 11,
+            "title": "Réparation Laser HP",
+            "category": "Maintenance Imprimantes",
+            "description": "Réparation experte d'imprimantes Laser HP. Remplacement de kits de fusion, nettoyage du chemin papier, et résolution des problèmes de qualité d'impression laser."
+        },
+        {
+            "id": 12,
+            "title": "Déblocage têtes de lecture",
+            "category": "Maintenance Imprimantes",
+            "description": "Débouchage professionnel de têtes d'impression. Techniques avancées pour récupérer des têtes d'impression obstruées par de l'encre séchée, évitant souvent un remplacement coûteux."
+        },
+        {
+            "id": 13,
+            "title": "Nettoyage physique & Pâte thermique",
+            "category": "Maintenance PC & Laptops",
+            "description": "Entretien physique et thermique PC. Nettoyage de la poussière interne et remplacement de la pâte thermique processeur pour éviter la surchauffe et réduire le bruit de la ventilation."
+        },
+        {
+            "id": 14,
+            "title": "Optimisation Système (Windows)",
+            "category": "Maintenance PC & Laptops",
+            "description": "Optimisation logicielle Windows. Nettoyage du registre, désactivation des programmes inutiles au démarrage et configuration optimale pour une expérience Windows fluide."
+        },
+        {
+            "id": 15,
+            "title": "Récupération de données",
+            "category": "Maintenance PC & Laptops",
+            "description": "Récupération de données critiques. Tentative de récupération de fichiers perdus, effacés accidentellement ou inaccessibles sur disques durs et clés USB endommagés."
+        },
+        {
+            "id": 16,
+            "title": "Photos d'identité (x8)",
+            "category": "Photographie & Identité",
+            "description": "Service Photos d'identité (Planche de 8). Photos conformes et de qualité pour tous vos documents administratifs (Passeport, CNI, Visa, Carte Vitale)."
+        },
+        {
+            "id": 17,
+            "title": "Portrait Professionnel",
+            "category": "Photographie & Identité",
+            "description": "Portrait Professionnel Corporate. Séance photo dédiée pour vos profils LinkedIn, CV ou site web, mettant en valeur votre image professionnelle."
+        },
+        {
+            "id": 18,
+            "title": "Tirage Photo numérique",
+            "category": "Photographie & Identité",
+            "description": "Tirage Photo Numérique Haute Qualité. Impression de vos souvenirs sur papier photo premium, disponible en plusieurs formats du 10x15 au format poster."
+        },
+        {
+            "id": 19,
+            "title": "Audit de parc informatique",
+            "category": "Conseils & Technologie",
+            "description": "Audit complet de parc informatique. Inventaire, analyse de vétusté et de sécurité de vos équipements pour optimiser vos investissements et votre maintenance."
+        },
+        {
+            "id": 20,
+            "title": "Conseil en achat matériel",
+            "category": "Conseils & Technologie",
+            "description": "Conseil expert en achat matériel. Accompagnement personnalisé pour choisir les équipements (PC, Imprimantes, Serveurs) les plus adaptés à vos besoins et à votre budget."
+        },
+        {
+            "id": 21,
+            "title": "Sécurisation réseau WiFi",
+            "category": "Conseils & Technologie",
+            "description": "Sécurisation de réseaux Wi-Fi. Audit de sécurité, configuration de cryptage fort (WPA3) et mise en place de réseaux invités pour protéger vos données."
+        }
+    ]
+}

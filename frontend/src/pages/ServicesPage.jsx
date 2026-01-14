@@ -47,7 +47,7 @@ const ServicesPage = () => {
                             <div className="md:flex h-full">
                                 <div className="md:w-1/3 relative h-64 md:h-auto overflow-hidden">
                                     {service.image ? (
-                                        <img className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" src={service.image} alt={service.title} />
+                                        <img className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" src={service.image} alt={service.title} loading="lazy" />
                                     ) : (
                                         <div className="h-full w-full bg-primary/10 flex items-center justify-center text-primary text-5xl">
                                             <i className={service.icon || 'fas fa-rocket'}></i>

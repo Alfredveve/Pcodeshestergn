@@ -15,7 +15,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, re_path
+from django.views.generic import TemplateView
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from django.conf import settings
@@ -32,9 +33,11 @@ def api_root(request):
     })
 
 urlpatterns = [
-    path('', api_root, name='api-root'),
+    # path('', api_root, name='api-root'),
     path('admin/', admin.site.urls),
+
     path('api/', include('home.api_urls')),
+    re_path(r'^.*$', TemplateView.as_view(template_name='index.html')),
 ]
 
 if settings.DEBUG:

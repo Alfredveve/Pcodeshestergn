@@ -39,12 +39,13 @@ const MaintenancePage = () => {
                         src="https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
                         alt="Background Tech" 
                         className="w-full h-full object-cover"
+                        loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
                 </div>
                 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-                    <span className="px-4 py-2 rounded-full bg-primary/20 text-primary-light border border-primary/30 font-bold tracking-wider uppercase text-xs mb-6 inline-block backdrop-blur-sm">
+                    <span className="px-4 py-2 rounded-full bg-primary/20 text-white border border-primary/30 font-bold tracking-wider uppercase text-xs mb-6 inline-block backdrop-blur-sm">
                         Expertise Technique
                     </span>
                     <h1 className="text-4xl md:text-6xl font-display font-bold text-white mb-6">
